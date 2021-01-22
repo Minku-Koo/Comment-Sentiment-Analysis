@@ -25,7 +25,7 @@ from tensorflow.keras.layers import (
 )
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.utils import to_categorical
-
+from sklearn.model_selection import train_test_split
 import tensorflow_transform as tft
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers.experimental.preprocessing import TextVectorization
@@ -33,12 +33,12 @@ from tensorflow.keras.layers import LSTM
 
 print(tf.__version__)
 
-from sklearn.model_selection import train_test_split
+
 #     csv 파일 읽어서 x y 리스트 저장
 x, y = [],[]
-path = "./comment/emo/okt/"
-fname = "set-okt.csv"
-fnamee = "ratings-okt.csv"
+path = "../train-data/"
+fname = "comment-labeling.csv"
+fnamee = "ratings.csv"
 f = open(path +fname, 'r', encoding='utf-8')
 rdr = csv.reader(f)
 p,n = 0,0
@@ -114,7 +114,7 @@ rnn_model.summary()
 
 import time
 
-thepath = "./save_model/"
+thepath = "../mmm/"
 name ="rnn-model"
 tf.saved_model.save(rnn_model, thepath+name)
 
@@ -134,7 +134,7 @@ def make_graph(history_dict):
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.legend()
-    plt.savefig("./save_model/train.png", dpi=400) 
+    plt.savefig("../mmm/train.png", dpi=400) 
     plt.show()
 
 
@@ -144,7 +144,7 @@ def make_graph(history_dict):
     plt.xlabel('Epochs')
     plt.ylabel('acc')
     plt.legend()
-    plt.savefig("./save_model/val.png", dpi=400) 
+    plt.savefig("../mmm/val.png", dpi=400) 
     plt.show()
     
 history_dict = history.history

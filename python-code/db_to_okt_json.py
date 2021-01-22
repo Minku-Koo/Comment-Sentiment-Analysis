@@ -43,8 +43,8 @@ for tablename in tlist:
                     temp.append(i[0])
             result[article_date][url][0].append(" ".join(temp))
             
-with open(tablename+"-dict.json", "w") as json_file:
-    json.dump(result, json_file, indent="\t",ensure_ascii = False)
+    with open("../comment/json-comment/"+tablename+"-dict.json", "w") as json_file:
+        json.dump(result, json_file, indent="\t", ensure_ascii = False)
 
     
 db.close() 
