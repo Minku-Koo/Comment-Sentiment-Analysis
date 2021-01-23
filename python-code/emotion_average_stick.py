@@ -5,7 +5,7 @@ import math
 import pandas as pd
 import numpy as np
 
-
+filepath = "../result-graph/"
 tlist = []
 for i in range(1,6):
     tlist.append(["before"+str(i),"after"+str(i)])
@@ -49,40 +49,36 @@ def calc_comment_avg(dict, tablename ):
     
     std = round(math.sqrt(var),3) #표준편차
     title = dictName[tablename[-1]]
-    with open("etc.txt","at",encoding="utf-8") as f:
+    with open(filepath +"statistics-history.txt","at",encoding="utf-8") as f:
         f.write(title+"  "+tablename+"\n")
-        f.write("Before/ avg: "+str(mean)+" 분산: "+str(var)+" 표준편차: "+str(std)+"\n")
+        f.write("avg: "+str(mean)+" 분산: "+str(var)+" 표준편차: "+str(std)+"\n")
     
     return mean
     
 # 날짜별 기사 평균 댓글 수  선 그래프
 def make_graph(tablename, x, y,  fig):
     plt.figure(fig, figsize=(16, 6))
-    font_name = font_manager.FontProperties(fname='KoPubDotumMedium.ttf', size=20).get_name()
+    font_name = font_manager.FontProperties(fname='./font/KoPubDotumMedium.ttf', size=20).get_name()
     rc('font', family=font_name)
     
     plt.ylim([0, 1]) 
     plt.title(tablename,fontsize=22)
-    for i, v in enumerate([r for r in range(5)] ):  #[dictName[str(d)] for d in range(1,6)]
-        print(i)
-        print(v)
-        print("**")
-        plt.text(v, y[i], y[i],                 # 좌표 (x축 = v, y축 = y[0]..y[1], 표시 = y[0]..y[1])
+    for i, v in enumerate([r for r in range(5)] ): 
+        plt.text(v, y[i], y[i],    
              fontsize = 11, 
              color='black',
-             horizontalalignment='center',  # horizontalalignment (left, center, right)
+             horizontalalignment='center', 
              verticalalignment='bottom')
-    for i, v in enumerate([r for r in range(5)] ):  #[dictName[str(d)] for d in range(1,6)]
-        plt.text(v-0.3, x[i], x[i],                 # 좌표 (x축 = v, y축 = y[0]..y[1], 표시 = y[0]..y[1])
+    for i, v in enumerate([r for r in range(5)] ): 
+        plt.text(v-0.3, x[i], x[i],  
              fontsize = 11, 
              color='black',
-             horizontalalignment='center',  # horizontalalignment (left, center, right)
+             horizontalalignment='center', 
              verticalalignment='bottom')
     wid = 0.3
     plt.bar(range(len(y)), y, color='#F7BE81' , label="After"  ,width=0.3)
     plt.bar( [i-wid for i in range(len(x))] , x, color='#58ACFA' , label="Before" ,width=0.3 )
     
-    # plt.text()
     plt.ylim([0, 0.5]) 
     plt.xlabel('Religion',fontsize=20)
     plt.ylabel('Emotion',fontsize=20)
@@ -90,8 +86,7 @@ def make_graph(tablename, x, y,  fig):
     plt.xticks([x-0.15 for x in range(0,5)], [dictName[str(d)] for d in range(1,6)])
     plt.yticks(fontsize=16)
     plt.legend()
-    # plt.show()
-    plt.savefig("./result/"+tablename+'-graph-avg-emotion.png', dpi=400) 
+    plt.savefig(filepath +"/stick/"+tablename+'-graph-avg-emotion.png', dpi=400) 
     return 0
 
 fig = 0
@@ -100,7 +95,7 @@ for tableList in tlist:
     data =[]
     for tablename in tableList:
         temp = {}
-        path = "./comment/jjson/okt-emo/"
+        path = "../comment-emotion-predict/"
         with open(path+"finish-daum"+tablename+'-dict.json', encoding="utf-8") as json_file:
             data1 = json.load(json_file)
         with open(path+"finish-naver"+tablename+'-dict.json', encoding="utf-8") as json_file:

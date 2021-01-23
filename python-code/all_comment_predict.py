@@ -1,5 +1,4 @@
 ﻿
-
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] ='2'
 
@@ -40,10 +39,9 @@ for i in range(1,6):
     tlist.append(t+"before"+str(i))
 print(tlist)
 
-rnn_model = tf.keras.models.load_model("./save_model/model-wow10", custom_objects={"TextVectorization":TextVectorization})
+rnn_model = tf.keras.models.load_model("../comment_emotion_rnn-model/rnn_model", custom_objects={"TextVectorization":TextVectorization})
 n=0
-path = "./comment/jjson/okt/"
-tlist = ["naverafter5"]
+path = "../comment/json-okt-comment/"
 for tablename in tlist:
     with open(path+tablename+'-dict.json', encoding="utf-8") as json_file:
         data = json.load(json_file)
@@ -59,5 +57,6 @@ for tablename in tlist:
                     continue
                 emotion = float(rnn_model.predict([comment]))
                 data[date][article][-1].append(round(emotion, 4))
-    with open('./comment/jjson/okt-emo/'+"finish-"+tablename+"-dict.json", "w", encoding="utf-8") as json_file:
+    result_path = "../comment-emotion-predict/"
+    with open(result_path+"finish-"+tablename+"-dict.json", "w", encoding="utf-8") as json_file:
         json.dump(data, json_file, indent="\t",ensure_ascii = False)

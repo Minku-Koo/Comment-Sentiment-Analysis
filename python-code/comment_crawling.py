@@ -1,5 +1,12 @@
-# news crawler
-# 20201219
+
+"""
+- News crawler
+- Target Web Page : Naver and Daum News
+- Kinds of Scrap Data : Title, Content, Date, all of comment and reply
+
+Author : Minkuk Koo
+E-Mail : corleone@kakao.com
+"""
 
 '''
 DATABASE TABLE INFO
@@ -49,14 +56,13 @@ class newsCrawler:
 
         self.db = pymysql.connect( #연결할 디비 정보
                 user='root', 
-                passwd='rnalsrn12', 
+                passwd='', 
                 host='localhost', 
-                db='mining',
+                db='',
                 charset="utf8mb4"
                 )
         # selenium 크롤링을 위한 크롬 드라이버 생성
         self.driver = webdriver.Chrome('./driver/chromedriver.exe', chrome_options=self.options)
-        # self.driver = webdriver.Chrome('./driver/chromedriver.exe')
         self.driver.implicitly_wait(5)
 
     def naverNews(self): #네이버 뉴스
@@ -102,16 +108,14 @@ class newsCrawler:
                 break
             else: nextButton.click()
         
-        print("link count:",len(self.linkSet))
         self.cursor = self.db.cursor()  # DB 연결
         self.naverArticle(self.linkSet) #기사별 데이터 수집
         self.db.commit() #디비 저장
         self.db.close() #디비 연결 종료
-        pass
+        return 0
     
     # 링크 리스트를 통해 기사 정보 추출
     def naverArticle(self, linkSet): #파라미터:페이지 링크 리스트
-        
         link_count = len(linkSet)
         count = 1
         for link in linkSet: #모든 링크 데이터 수집
@@ -151,7 +155,6 @@ class newsCrawler:
             except: #더이상 더보기 클릭이 불가능한 경우
                 print("댓글 더보기 없음")
             
-            
             try: #답글 보기 전부 클릭
                 for i in self.driver.find_elements_by_class_name("u_cbox_reply_cnt"): 
                     if i.text != "0":  #답글이 있는 경우
@@ -160,7 +163,6 @@ class newsCrawler:
             except: #더이상 더보기 클릭이 불가능한 경우
                 print("대댓글 없음")
 
-            
             commentSet = ""  #댓글 리스트
             for comment in self.driver.find_elements_by_class_name("u_cbox_contents"):
                 #기사별 모든 댓글 구분하여 저장
@@ -176,6 +178,7 @@ class newsCrawler:
             print(self.keyword,">>",count,"/",link_count)
             
         print("Data finished")
+        return 0
 
     def daumNews(self): #다음 뉴스
         url = "https://search.daum.net/search?w=news&nil_search=btn&DA=STC&enc=utf8&cluster=y&cluster_page=1&q="
@@ -215,7 +218,7 @@ class newsCrawler:
         self.daumArticle(self.linkSet) #기사별 데이터 수집
         self.db.commit() #디비 저장
         self.db.close() #디비 연결 종료
-        pass
+        return 0
     
     def daumArticle(self, linkSet):
         link_count = len(linkSet)
@@ -307,10 +310,11 @@ class newsCrawler:
             print(self.keyword,">>",count,"/",link_count)
             
         print("Data finished")
-
+        return 0
 
 if __name__ == "__main__":
-    crawler = newsCrawler("before_news1", "20190917","20200217", "신천지")
+    crawler = newsCrawler("db_table_name", "Start_Date","End_Date", "KEYWORD")
+    # ex> newsCrawler("table","20201231","20210209""deep learning", "keras")
     crawler.naverNews()
     crawler.daumNews()
     

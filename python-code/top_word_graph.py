@@ -58,37 +58,43 @@ dictName = {
         "3":"천주교",
         "4":"불교",
         "5":"종교" }
-        
+
+result_path = '../result-graph/top-word/'
+
 def make_top_file(list, tname):
-    with open("./ff/"+tname+'.txt', 'wt', encoding='utf-8') as f:
+    global dictName
+    with open(result_path+dictName[tablename[-1]]+"-"+tname+'.txt', 'wt', encoding='utf-8') as f:
         for l in list:
             f.write(l[0]+"/" +str(l[1])+"\n")
 
 
 
-def make_token(tname, result, top, num, keyword ):
+def make_token(tname, result, top, num ):
+    global dictName
+    if "after" in tname: period = " 이후"
+    else: period = " 이전"
+    
     tokens = result.split(" ")
     text = nltk.Text(tokens)
     print("word token:",len(set(text.tokens)))
     topWord = text.vocab().most_common(top) 
-    count = 40
+    count = 30
     xlist = [a[0] for a in topWord[:count ]]
     ylist = [a[1] for a in topWord[:count ]]
     
     plt.figure(num-1)
-    font_name = font_manager.FontProperties(fname='KoPubDotumMedium.ttf', size=7).get_name()
+    font_name = font_manager.FontProperties(fname='./font/KoPubDotumMedium.ttf', size=7).get_name()
     rc('font', family=font_name)
 
     plt.xlabel('word')
     plt.xticks(rotation=70)
     plt.ylabel('count')
-    plt.title(keyword +' TOP WORD')
-    plt.ylim([30, 36000]) 
+    plt.title(dictName[tname[-1]]+period +' TOP '+str(count)+' WORD')
+    plt.ylim([10, 33000]) 
     plt.plot(xlist,ylist)
-    plt.savefig('./ff/'+tname+'-graph.png', dpi=400)
-    
+    plt.savefig(result_path+tname+'-graph.png', dpi=400)
     for i in topWord[:20]: print(i)
-    make_top_file(topWord, tname)
+    # make_top_file(topWord, tname)
 
 tlist = []
 for i in range(1,6):
@@ -100,29 +106,31 @@ for tableList in tlist:
     data = []
     for tablename in tableList:
         temp = ""
-        keyword = dictName[tablename[-1]]
-        with open("daum"+tablename+'-comment+okt.txt', encoding="utf-8") as f:
+        source_path ="../comment/after-okt-comment/"
+        with open(source_path+"daum"+tablename+'-comment+okt.txt', encoding="utf-8") as f:
             temp = f.read()
-        with open("naver"+tablename+'-comment+okt.txt', encoding="utf-8") as f:
+        with open(source_path+"naver"+tablename+'-comment+okt.txt', encoding="utf-8") as f:
             temp += f.read()
         cList =[]
         print("**"*10,":", tablename)
         cList = temp.replace("\n"," ").split(" ")
         result =""
+        keyword = dictName[tablename[-1]]
         for c in cList:
             sp = c.split("/")
             if len(sp[0]) ==1: continue
             if c=="": continue
-            #word , non= sp[0], sp[1]
             try:
                 word , non= sp[0], sp[1]
-            except: print("c:",c)
-
+            except: 
+                print("c:",c)
+                continue
+            
             if non != 'Noun': continue
             if word == keyword : continue
             if word not in stopword: result += (word+" ")
             
         num+=3
-        make_token(tablename,result,  100, num, keyword )
+        make_token(tablename,result,  100, num )
         
         

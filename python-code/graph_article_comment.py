@@ -58,9 +58,9 @@ def calc_comment_count(dict ):
         # average
         # y.append(round(val[1][0]/val[1][1],3))
         # all count
-        # y.append(val[1][0])
+        y.append(val[1][0])
         # article count
-        y.append(val[1][1])
+        # y.append(val[1][1])
     return x, y 
 
 def sum_graph(tablename, x, y, x2, y2, pp, colors):
@@ -101,7 +101,7 @@ def sum_graph(tablename, x, y, x2, y2, pp, colors):
 # 날짜별 기사 평균 댓글 수  선 그래프
 def make_graph(tablename, x, y, x2, y2, fig):
     plt.figure(fig, figsize=(16, 6))
-    font_name = font_manager.FontProperties(fname='KoPubDotumMedium.ttf', size=20).get_name()
+    font_name = font_manager.FontProperties(fname='./font/KoPubDotumMedium.ttf', size=20).get_name()
     rc('font', family=font_name)
     
     ee =0
@@ -134,8 +134,8 @@ def make_graph(tablename, x, y, x2, y2, fig):
     
     ax = nx + nx2
     ay = y + y2
-    plt.ylim([0, 1000]) 
-    plt.title("월별 기사 수",fontsize=22)
+    plt.ylim([0, 70000]) 
+    plt.title("월별 댓글 수",fontsize=22)
     plt.plot(ax, ay, 'b', color='#2E9AFE' , label=dictName[tablename[-1]] , marker='o')
     # plt.plot(nx2, y2, 'b', color='green' , label="After" )
     plt.xlabel('Date',fontsize=20)
@@ -154,7 +154,7 @@ for tableList in tlist:
     data =[]
     for tablename in tableList:
         temp = {}
-        path = "./comment/jjson/okt-emo/"
+        path = "../comment-emotion-predict/"
         with open(path+"finish-daum"+tablename+'-dict.json', encoding="utf-8") as json_file:
             data1 = json.load(json_file)
         with open(path+"finish-naver"+tablename+'-dict.json', encoding="utf-8") as json_file:
@@ -169,13 +169,12 @@ for tableList in tlist:
         plt = make_graph(tablename, x, y, x2, y2,fig)
         fig+=1
     else: 
-        print( colorlist[fig-1])
+        # print( colorlist[fig-1])
         plt = sum_graph(tablename, x, y, x2, y2, plt, colorlist[fig-1])
         fig+=1
         
         
-    # fig+=2
-plt.savefig("./result/comment_per_article/"+tablename+'-graph-article-comment-count.png', dpi=400) 
+plt.savefig("../result-graph/comment-count/graph-month-comment-count.png", dpi=400) 
     
     
     

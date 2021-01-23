@@ -40,11 +40,9 @@ def make_graph_over(tablename, x, y, x2, y2, fig):
     for v in y2: vsum = vsum + (v - average[1]) ** 2
     bunsan2 = round(vsum / len(y2), 3)
     std2 = round(math.sqrt(bunsan2), 3)
-    with open("graph-information.txt","at",encoding="utf-8") as fff:
-        fff.write(dictName[tablename[-1]]+"/ before: avg "+str(average[0])+" bunsan "+str(bunsan1)+"표준편차 "+str(std1))
-        fff.write("/ after: avg "+str(average[1])+" bunsan "+str(bunsan2)+"표준편차 "+str(std1)+"\n")
+    
     plt.figure(fig, figsize=(16, 5))
-    font_name = font_manager.FontProperties(fname='KoPubDotumMedium.ttf', size=20).get_name()
+    font_name = font_manager.FontProperties(fname='./font/KoPubDotumMedium.ttf', size=20).get_name()
     rc('font', family=font_name)
     
     plt.title(dictName[tablename[-1]],fontsize=22)
@@ -56,15 +54,15 @@ def make_graph_over(tablename, x, y, x2, y2, fig):
     nx = np.array(nx)
     ny = np.array(y)
     m, bb = np.polyfit(nx, ny, 1)
-    plt.plot(nx, m*nx + bb, 'r--', color='blue' , label="Before Trend Line")
-    plt.plot(nx, y, 'bo', color='green', label="Before Emotion" )
+    plt.plot(nx, m*nx + bb, 'r--', color='#819FF7' , label="Before Trend Line")
+    plt.plot(nx, y, 'bo', color='#04B404', label="Before Emotion" )
 
     nx2 = [ e+2 for e in range(ee-1, ee-1+len(x2)) ]
     nx2 = np.array(nx2)
     ny2 = np.array(y2)
     m2, bb2 = np.polyfit(nx2, ny2, 1)
-    plt.plot(nx2, m2*nx2 + bb2, 'r--', color='red' , label="After Trend Line" )
-    plt.plot(nx2, y2, 'bo', color='orange' , label="After Emotion" )
+    plt.plot(nx2, m2*nx2 + bb2, 'r--', color='#FAAC58' , label="After Trend Line" )
+    plt.plot(nx2, y2, 'bo', color='#FF0080' , label="After Emotion" )
     month_list, temp, year_temp = [], "", ''
     for month in x:
         month, year = month.split("/")[1],  month.split("/")[0][2:]
@@ -93,7 +91,7 @@ def make_graph_over(tablename, x, y, x2, y2, fig):
     plt.yticks(fontsize=16)
     plt.xticks(range(0,len(month_list)), month_list)
     plt.legend()
-    plt.savefig(tablename+'-graph-or.png', dpi=400) 
+    plt.savefig("../result-graph/emotion-flow/"+tablename+'-graph-emotion-flow.png', dpi=400) 
     
 
 def makeValue(data):
@@ -146,10 +144,10 @@ for tableList in tlist:
     data = []
     for tablename in tableList:
         temp = {}
-        
-        with open('./finish/'+"finish-daum"+tablename+'-dict.json', encoding="utf-8") as json_file:
+        path = "../comment-emotion-predict/"
+        with open(path+"finish-daum"+tablename+'-dict.json', encoding="utf-8") as json_file:
             data1 = json.load(json_file)
-        with open('./finish/'+"finish-naver"+tablename+'-dict.json', encoding="utf-8") as json_file:
+        with open(path+"finish-naver"+tablename+'-dict.json', encoding="utf-8") as json_file:
             data2 = json.load(json_file)
 
         temp = append_dict(data1, data2)

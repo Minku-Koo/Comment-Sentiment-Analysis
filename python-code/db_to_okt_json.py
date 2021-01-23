@@ -1,9 +1,10 @@
 ﻿# 디비에서 댓글 꺼내서 날짜순으로 작성하고 okt 돌리기
-
+# database comment order by date > konlpy (okt) > make json 
 import pymysql
 import json
 from konlpy.tag import Okt
-tlist = []
+
+tlist = [] #테이블 이름 리스트
 for i in range(1,6):
     t = "daum"
     tlist.append(t+"after"+str(i))
@@ -12,13 +13,12 @@ for i in range(1,6):
     t = "naver"
     tlist.append(t+"after"+str(i))
     tlist.append(t+"before"+str(i))
-print(tlist)
 
 db = pymysql.connect( #연결할 디비 정보
                 user='root', 
-                passwd='rnalsrn12', 
-                host='203.252.231.52',#'112.165.180.190', 
-                db='mining',
+                passwd='', 
+                host='localhost',
+                db='',
                 charset="utf8mb4"
                 )
 ok = Okt()

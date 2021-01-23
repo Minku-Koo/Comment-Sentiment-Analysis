@@ -38,7 +38,7 @@ print(tf.__version__)
 x, y = [],[]
 path = "../train-data/"
 fname = "comment-labeling.csv"
-fnamee = "ratings.csv"
+fnamee = "naver-ratings.csv"
 f = open(path +fname, 'r', encoding='utf-8')
 rdr = csv.reader(f)
 p,n = 0,0

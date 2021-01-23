@@ -1,0 +1,66 @@
+뭘/Noun 모르시면서/Verb 50/Number 명/Noun 이/Josa 확진/Noun 됬다는/Verb 근거/Noun 없는/Adjective 기사/Noun 작성/Noun 하셨네요/Verb 광덕사/Noun 는/Josa 작은/Adjective 사찰/Noun 이라/Josa 유명하지/Adjective 않습니다/Verb 
+고승덕/Noun ㅋㅋ/KoreanParticle 그럼/Adjective 그렇지/Adjective 
+원숭이/Noun 와/Josa 무/Noun ㄴ/KoreanParticle 정부/Noun 는/Josa 교회/Noun 는/Josa 때려/Verb 뿌스/Noun 고/Josa 신천지/Noun 는/Josa 왜/Noun 안/VerbPrefix 잡나/Verb ?/Punctuation 국민/Noun 기만/Noun 그만하고여/Adjective 적제/Noun 사/Modifier 기/Modifier 국/Noun 개/Suffix 와/Josa 저/Determiner ㅇ/KoreanParticle 부는/Verb 책임지고/Verb 사태/Noun 하고/Josa 국민/Noun 의/Josa 심판/Noun 받으라/Verb !/Punctuation 
+문화재/Noun 관련/Noun 예/Modifier 산이/Noun 마치/Noun 불교인/Noun 들/Suffix 만/Josa 위/Noun 한/Josa 예산/Noun 인양/Noun 보도/Noun 하고/Josa 폄해/Verb 하는자/Verb 들은/Verb 마치/Noun 국가/Noun 전통/Noun 을/Josa 부정/Noun 하는것/Verb 같아/Adjective 듣기/Noun 민망하네/Adjective ./Punctuation 
+악질/Noun 극우/Noun 기레기/Noun 들/Suffix !!!/Punctuation 
+kbs/Alpha ./Punctuation 정신차려라/Noun 
+임종/Noun 명/Suffix 기자/Noun 님/Suffix ,/Punctuation 조계종/Noun 코로나/Noun 로/Josa 조용하니/Adjective 또/Noun 불교/Noun 계/Suffix 를/Josa 헛/Noun 뜯는데요/Verb ./Punctuation 당/Modifier 연/Noun 이/Josa 정부/Noun 지원/Noun 받아야지요/Verb ./Punctuation 언론사/Noun 는/Josa 만약/Noun 아니시면/Adjective 어떻/Adjective 할거요/Verb !!!/Punctuation 
+스님/Noun 언론사/Noun 는/Josa 구/Noun 냥/Josa 고소하세요/Adjective ./Punctuation 말/Noun 로는/Josa 안/VerbPrefix 들어요/Verb 마구/Noun 니/Josa 입니다/Adjective ./Punctuation 철퇴/Noun 가/Josa 필요해요/Adjective ./Punctuation 
+땡중/Noun 들/Suffix 은/Josa 입산/Noun 할/Verb 때/Noun 도/Josa 입장료/Noun 받고/Verb 사찰/Noun 물건/Noun 지킨다고/Verb 또/Noun 국가/Noun 에/Josa 손/Noun 벌리고/Verb ../Punctuation 뭐/Noun 하자는거냐/Verb ?/Punctuation 코로나/Noun 예산/Noun 이/Josa 왜/Noun 선심/Noun 성/Suffix 특정/Noun 종교/Noun 집단/Noun 에/Josa 지원/Noun 되는가/Verb ?/Punctuation 거기/Noun 집어넣은/Verb 지역구/Noun 의원/Noun 은/Josa 누구/Noun 인지/Josa 소상히/Adjective 밝히라/Verb ./Punctuation 
+하옇튼/Noun 교회/Noun 놈/Noun 들/Suffix 은/Josa ..../Punctuation 
+국립공원/Noun 입장료/Noun 에/Josa 사찰/Noun 입장료/Noun 도/Josa 포함/Noun 된/Verb 것/Noun 은/Josa .../Punctuation 좀/Noun 어떻게/Adjective 해결/Noun 이/Josa 되었/Verb 소이/Noun 까/Verb ??/Punctuation 먼저/Noun 솔선수범/Noun 을/Josa 보이시/Noun 면/Josa 좋을텐데요/Adjective .../Punctuation 
+수/Noun 님/Suffix 이/Josa 아녀/Adjective 난/Noun 도독/Noun 놈/Noun 으로/Josa 보이지/Noun 조계종/Noun 총무/Noun 원장/Noun 이라는/Josa 자/Noun 들/Suffix 하는/Verb 지/Modifier 거리/Noun 봐/Verb 그게/Noun 수/Noun 님/Suffix 여/Josa 도독/Noun 놈/Noun 이지/Josa 
+추경/Noun 을/Josa 하는/Verb 이유/Noun 가/Josa 문재인/Noun 인심/Noun 써라고/Verb 하냐/Verb 종교/Noun 에다가/Josa 추경/Noun 까지/Josa 써/Verb 가며지/Verb 원할만큼/Adjective 돈/Noun 이/Josa 남아도/Noun 나/Josa 
+외나에/Verb 세금/Noun 이/Determiner 저/Noun 들/Suffix 한테/Josa 가지시주/Verb 받고/Verb 국립공원/Noun 입장료/Noun 받고/Verb 
+수신료/Noun 는/Josa mbc/Alpha 에/Josa 내야/Noun 할듯/Verb kbs/Alpha 는/Verb 수신료/Noun 폐지/Noun 하/Suffix 라/Josa 
+자가/Noun 돈/Noun 으로/Josa 해/Noun 라/Josa 꽁/Adverb 짜/Verb 돈/Noun 인가/Josa ?/Punctuation 걱정/Noun 됩니다/Verb 
+불교/Noun 계/Suffix 애로/Noun 가/Josa 많았습니다/Adjective ./Punctuation 코로나/Noun 방역/Noun 협조/Noun 하느라/Verb ./Punctuation 추경/Noun 마땅히/Adjective 받을/Verb 만/Noun 하네요/Verb 
+코로나/Noun 양성/Noun 소/Noun 교회/Noun 에서/Josa 아주/Noun 싫어하겠/Adjective 쥐/Noun .../Punctuation 
+절/Noun 이고/Josa 교회/Noun 고/Josa 돈/Noun 주지마라/Verb .../Punctuation 다/Adverb 신도/Noun 들/Suffix 피/Noun 빠는/Verb 모기/Noun 들/Suffix 이다/Josa ....../Punctuation 
+주/Modifier 호떡/Noun 은/Josa 왜/Noun 사찰/Noun 투어/Noun 해서이/Verb 사단/Noun 을/Josa 만들었나/Verb ?-/Punctuation 국민일보/Noun 기자/Noun 협회/Noun -/Punctuation 
+세금/Noun 도/Josa 안내/Noun 는/Josa 종교시설/Noun 에/Josa 왠/Modifier 혈/Noun 세/Modifier 투입/Noun 
+국보/Noun 문화재/Noun 도/Josa 바이러스/Noun 에/Josa 걸리나요/Verb ?/Punctuation 문화/Noun 재치/Noun 로비/Noun 가/Josa 필요한가요/Adjective ?/Punctuation 절/Noun 에/Josa 손님/Noun 이/Josa 떨어져/Verb 영업/Noun 손실/Noun 을/Josa 보존/Noun 해주라는/Verb 말/Noun 인가요/Josa ?/Punctuation 
+나눔/Noun 의/Josa 집/Noun 에서/Josa 많이/Modifier 벌/Noun 면서/Noun 자체/Noun 돈/Noun 으로/Josa 하지/Verb !/Punctuation 
+추경/Noun 에/Josa 종교/Noun 지원이/Noun 왠/Modifier 말/Noun 인가/Josa 
+시/Modifier 주/Modifier 금/Noun 으로/Josa 하세요/Verb ./Punctuation 스님/Noun 들/Suffix 이/Josa 외제/Noun 고급/Noun 차/Noun 나/Josa 몰고다니고/Verb 제일/Noun 팔자/Noun 좋은/Adjective 사람/Noun 들/Suffix 아닌가요/Adjective ?/Punctuation 
+국립공원/Noun 입장료/Noun 받는/Verb 건/Noun 어디/Noun 다/Josa 쓰니/Verb ?/Punctuation 왜/Noun 절/Noun 에도/Josa 안/Noun 들어/Verb 가는데/Verb 돈/Noun 을/Josa 내야/Noun 되니/Verb ?/Punctuation 부처/Noun 보기/Noun 에/Josa 부끄럽지/Adjective 않니/Verb ?/Punctuation 
+뭣때문/Noun 에/Josa 불교/Noun 에/Josa 국민/Noun 의/Josa 세금/Noun 을/Josa 낭비하는가/Adjective ?/Punctuation 사찰/Noun 입장료/Noun 는/Josa 어떻게/Adjective 사용/Noun 되고/Verb 있나/Adjective ?/Punctuation 
+조계종/Noun 은/Josa 나눔/Noun 의/Josa 집/Noun 에/Josa 대해/Noun 해명/Noun 을/Josa 해/Noun 라/Josa 
+대한민국/Noun 국보/Noun 총/Noun 345/Number 점/Noun 중/Suffix 불교/Noun 문화재/Noun 가/Josa 180/Number 점/Noun 이다/Josa ./Punctuation 국보/Noun 의/Josa 52%/Number 가/Verb 불교/Noun 문화재/Noun 이다/Josa ./Punctuation 보물/Noun 등/Noun 까지/Josa 총/Modifier 망라/Noun 하/Suffix 면/Josa 63%/Number 나/Noun 된다/Verb ./Punctuation 우리나라/Noun 에서/Josa 사찰/Noun (/Punctuation 절/Noun )/Punctuation 을/Josa 빼면/Verb 관광/Noun 을/Josa 할/Verb 만/Noun 한/Josa 곳/Noun 이/Josa 얼마나/Noun 되던가/Verb ./Punctuation 명산/Noun 명찰/Noun 이/Noun 단어/Noun 가/Josa 단/Modifier 적/Noun 으로/Josa 알려주지/Verb 않는가/Verb ./Punctuation 국보/Noun 급/Suffix 문화재/Noun 는/Josa 국가/Noun 가/Josa 문화재/Noun 보호/Noun 법/Noun 으로/Josa 지원/Noun 관리/Noun 한다/Verb ./Punctuation 국가/Noun 에서/Josa 문화재/Noun 관리/Noun 에/Josa 필요한/Adjective 예산/Noun 을/Josa 추경/Noun 에/Josa 반영/Noun 하는/Verb 것/Noun 은/Josa 당연한/Adjective 것/Noun 이다/Josa ./Punctuation 그/Noun 불교/Noun 문화재/Noun 가/Josa 사찰/Noun 등/Noun 에/Josa 집중/Noun 되어/Verb 있으니/Adjective 당연히/Adjective 조계종/Noun 이/Josa 관계/Noun 되지/Verb 않겠는가/Verb ./Punctuation 종교/Noun 적/Suffix 색안경/Noun 을/Josa 벗고/Verb 그냥/Noun 문화재/Noun 보존/Noun 측면/Noun 이라고/Josa 생각/Noun 하면/Verb 된다/Verb ./Punctuation 
+언론/Noun 수준/Noun 이나/Josa 제대로/Noun 지켜라/Verb 국격/Noun 에/Josa 맞는/Verb 기자/Noun 수준/Noun 으로/Josa 키우세요/Verb 
+중/Noun 님/Suffix 들/Verb !/Punctuation 국립공원/Noun 입구/Noun 에서/Josa 출입/Noun 세/Noun 받는/Verb 행위/Noun 좀/Noun 그만/Adverb 하세/Verb 요절/Noun 입구/Noun 에서/Josa 받으면/Verb 될/Verb 걸/Noun 왜/Noun 길/Noun 을/Josa 지나는/Verb 사람/Noun 은/Josa 무조건/Noun ?/Punctuation 본인/Noun 들/Suffix 은/Josa 합리/Noun 성/Suffix ,/Punctuation 상식/Noun 도/Josa 없으면서/Adjective 상식/Noun 을/Josa 요구/Noun 하십니까/Verb ?/Punctuation 
+기레기/Noun 들/Suffix 이네/Josa 
+선심/Noun 성/Suffix 예산/Noun 확신/Noun 함/Noun 
+ㄱ/KoreanParticle 레기들/Noun 이/Josa 온갖/Modifier 가짜/Noun 뉴스/Noun 로/Josa 도배/Noun 해서/Verb 국민/Noun 을/Josa 혼란/Noun ㅅ/KoreanParticle 럽/Noun 게/Josa 한/Determiner 네/Noun 
+당연히/Adjective 들여다/Verb 보고/Noun 의혹/Noun 보도/Noun 할/Verb 수/Noun 있지/Adjective 
+공/Modifier 영/Modifier 방송/Noun 이라는/Josa 케비/Noun 에스/Noun 왜/Noun 논란/Noun 늘/Noun 만드냐/Verb ./Punctuation 아직/Adverb 닭그네/Noun 명박/Noun 시절/Noun 의/Josa 통제/Noun 되었는/Verb 방송/Noun 패턴/Noun 검/Noun 언/Modifier 유착/Noun 이라는/Josa 굴레/Noun 에서/Josa 탈피/Noun 하지/Verb 못/VerbPrefix 하는가/Verb ./Punctuation 
+조계종/Noun ../Punctuation 돈돈/Noun 돈/Noun .../Punctuation 국립공원/Noun 통/Noun 행세/Noun (/Punctuation 문화재/Noun 관람/Noun 료/Noun )/Punctuation 부터/Noun 없애라/Verb !!/Punctuation 이/Determiner 것/Noun 들/Suffix 아/Josa 
+추경/Noun 그렇게/Adverb 돈/Noun 이/Josa 많냐/Adjective 불교/Noun 행사/Noun 까지/Josa 챙겨주게/Verb 정말/Noun 말/Noun 이/Josa 안/VerbPrefix 나온다/Verb 
+쪽지/Noun 예산/Noun 없애기로/Verb 했는데/Verb 어떻게/Adjective 던지/Verb 실적/Noun 올리려는/Verb 망나니/Noun 국/Noun 개/Suffix 의원/Noun 이/Josa 아직도/Adverb 정신/Noun 못/VerbPrefix 차리고/Verb 있네/Adjective ./Punctuation 
+관심/Noun 법/Noun 으로/Josa 봐라/Verb 
+좌파/Noun 나/Josa 조계종/Noun 이나/Josa 똑같아/Adjective !/Punctuation 중/Noun 들/Suffix 의/Josa 이중성/Noun 사대주의/Noun 파벌/Noun 주의/Noun 권위/Noun 주의/Noun ......../Punctuation 조선불교/Noun 는/Josa 부처/Noun 가/Josa 없다/Adjective ./Punctuation 중이/Noun 부처/Noun 란/Noun 다/Adverb .../Punctuation 
+???????????????/Punctuation 불교/Noun 추경/Noun 도/Josa 있었어/Adjective ?????????????????????????/Punctuation 이/Determiner 걸/Noun 통과/Noun 시켰다고/Verb ???????????????/Punctuation 시급한/Adjective 추경/Noun 인데/Josa 거기/Noun 에/Josa 왜/Noun 불교/Noun 가/Josa 들어가나/Verb ???????????????/Punctuation 
+천문학/Noun 적/Suffix 액수/Noun 인/Josa 문화재/Noun 관람/Noun 료/Noun 는/Josa 어디/Noun 가고/Verb ?/Punctuation 정부/Noun 예산/Noun 이냐/Josa ?/Punctuation 그러니/Adjective 수행/Noun 은/Josa 여/Modifier 불/Noun 이고/Josa 싸움질/Noun 하지/Verb ~~~/Punctuation 
+이판승/Noun +/Punctuation 사판승/Noun =/Punctuation 고려시대/Noun 불교/Noun ../Punctuation 똑/Noun 같구먼/Adjective ⟩⟩/Foreign ./Punctuation 언제/Noun 수행/Noun 하여/Verb ..../Punctuation 아라/Noun 한/Josa 1/Number 명/Noun 배출/Noun 못/Noun 한/Josa 조계종/Noun 
+조계종/Noun 과/Josa 관련/Noun 해서는/Verb 절대/Noun 국고/Noun 지원/Noun 을/Josa 해서는/Verb 안된다/Adjective 법주사/Noun 에서/Josa 스님/Noun 들/Suffix 이/Josa 모/Noun 여서/Josa 놀음/Noun 하고/Josa 국립공원/Noun 마다/Josa 사찰/Noun 관람/Noun 료/Noun 라면/Noun 서/Josa 입장료/Noun 징수/Noun 하는데/Verb 등산/Noun 객/Noun 들/Suffix 이/Josa 무슨/Noun 문화재/Noun 를/Josa 관람/Noun 한다고/Verb 문화재/Noun 관람/Noun 료/Noun 는/Josa 국가/Noun 의/Josa 수입/Noun 으로/Josa 해야지/Verb 
+불교/Noun 에/Josa 만/Noun 지원/Noun ?/Punctuation 개신교/Noun 예배/Noun 못/Noun 봐서/Verb 너무/Adverb 힘들다는데/Adjective ,/Punctuation 천주교/Noun 는/Josa 더/Noun 힘든다는데/Adjective ,/Punctuation 떼/Noun 쓰나/Verb ?/Punctuation 불교/Noun 계/Suffix 국회의원/Noun 이/Josa 알아서/Verb 해주/Noun 나/Josa 봐/Verb ,/Punctuation 후원/Noun 도/Josa 국회의원/Noun 에게/Josa 잘해주니/Verb ,/Punctuation 그/Determiner 런가/Noun ?/Punctuation 다른/Noun 종교/Noun 는/Josa 조용하네/Adjective ./Punctuation 
+사찰/Noun 에/Josa 비싼/Adjective 입장료/Noun 걸어놓고/Verb 말/Noun 도/Josa 많네/Adjective ./Punctuation 우리/Noun 스님/Noun 들/Suffix 승용차/Noun 업그레이드/Noun 하고/Josa 싶은/Verb 모양/Noun 이다/Josa ./Punctuation 
+종교/Noun 시설/Noun 이/Josa 뭐/Noun 대단하다고/Adjective 국민/Noun 혈세/Noun 지원/Noun 하냐/Verb ./Punctuation 중이/Noun 나/Josa 목사/Noun 세금/Noun 한/Determiner 푼/Noun 도/Josa 안내/Noun 는/Josa 한심한/Adjective 사람/Noun 들/Suffix 인데/Josa ./Punctuation 
+국민/Noun 의/Josa 세금/Noun 으로/Josa 특정/Noun 종교/Noun 를/Josa 지원/Noun 하나/Noun ?/Punctuation 
+개판/Noun 이구나/Josa KBS/Alpha 
+♩/Foreign ~/Punctuation ♪♩♬♪♪♬/Foreign 들/Verb 참/Verb 많다/Adjective ./Punctuation 
+그럼/Adjective 관리/Noun 를/Josa 위/Noun 한/Josa 비용/Noun 및/Noun 관리자/Noun 들/Suffix 인건비/Noun 는/Josa 당신/Noun 이/Josa 주/Modifier 시오/Noun ../Punctuation 
+절/Noun 에/Josa 가지/Noun 않는/Verb 사람/Noun 들/Suffix 한테/Josa 도/Noun 일률/Noun 적/Suffix 으로/Josa 입장료/Noun 를/Josa 걷는다는/Verb 것/Noun 이/Josa 문제/Noun 인/Josa 것/Noun 아니겠소/Adjective ?/Punctuation 
+스님/Noun 도/Josa 문제/Noun 지만/Josa ...,/Punctuation 먹사/Verb 들에/Verb 비/Noun 할까/Verb ~/Punctuation 
+공원/Noun 입장료/Noun 는/Josa 참여정부/Noun 때/Noun 이미/Adverb 없어졌어요/Verb 
+그럼/Adjective 우파/Noun 나/Josa 기독교도/Noun 똑같나/Adjective ?/Punctuation 목사/Noun 들/Suffix 의/Josa 이중성/Noun ,/Punctuation 성폭행/Noun 파벌/Noun ,/Punctuation 권위/Noun 주/Modifier 의제/Noun 대로/Josa 된/Verb 목사/Noun 가/Josa 없다/Adjective 목사/Noun 가/Josa 하느님/Noun 이란/Josa 다/Adverb ./Punctuation 거의/Noun 비슷한가/Adjective ?/Punctuation 
+문화재/Noun 가/Josa 있으니/Adjective 당/Modifier 연/Noun 있겠지/Adjective 
+정/Noun 구리/Noun ⟨/Foreign ----/Punctuation 추경/Noun 은/Josa 긴급하게/Adjective 추가/Noun 로/Josa 편성/Noun 되는/Verb 경정/Noun 예산/Noun 인데/Josa 불교/Noun 문화재/Noun 가/Josa 시급/Noun 을/Josa 요/Modifier 해/Noun 편성/Noun 하는/Verb 추경/Noun 에/Josa 들어갈/Verb 사안/Noun 인가/Josa ???????????????????/Punctuation 
+욕/Noun 먹을/Verb 짓/Noun 했네/Verb ./Punctuation 
+이러니/Conjunction 욕먹는거다/Verb ~!/Punctuation 언론/Noun 이/Josa 시퍼렇게/Adjective 보고/Noun 있는데도/Adjective 이러니/Conjunction ~!/Punctuation 민주당/Noun 정권/Noun 바뀔/Verb 때/Noun 가/Josa 됐네/Verb ~!/Punctuation 
+기독교인/Noun 으로서/Josa 드릴/Noun 말/Noun 이/Josa 있다면/Adjective 인권/Noun 이라는/Josa 측면/Noun 에서/Josa 애석하게도/Adjective 현재/Noun 종교/Noun 적/Suffix 노예제/Noun 인/Josa 윤회사상/Noun 으로/Josa 인한/Adjective 국가/Noun 와/Josa 민간/Noun 차원/Noun 의/Josa 살상/Noun 은/Josa 가장/Noun 심각합니다/Adjective 가령/Noun 부처/Noun (/Punctuation 석가모니/Noun )/Punctuation 는/Verb 보살/Noun 로서/Noun 억/Modifier 겁/Noun 의/Josa 세월/Noun 동안/Noun 수많은/Adjective 세계/Noun 에서/Josa 윤회/Noun 하여/Verb ,/Punctuation 완전한/Adjective 깨달음/Noun 인/Josa 부처/Noun 의/Josa 영역/Noun 에/Josa 도달/Noun 했다고/Verb 주/Modifier 장하나/Noun 이/Suffix 는/Josa 허황/Noun 된/Verb 것/Noun 입니다/Adjective 왜냐하면/Adverb 사람/Noun 의/Josa DNA/Alpha 가/Verb 짐승/Noun 의/Josa DNA/Alpha 로/Noun 무수/Noun 히/Adverb 재창/Noun 조/Suffix 될/Verb 수/Noun 는/Josa 없기/Adjective 때문/Noun 입니다/Adjective 기독교/Noun 로부터/Noun 자유/Noun 민주주의/Noun 삼권분립/Noun 과/Josa 청지기/Noun 적/Suffix 자본주의/Noun 가/Josa 나왔습니다/Verb 교육학/Noun 이나/Josa 아동/Noun 을/Josa 중시/Noun 하는/Verb 것/Noun 역시/Noun 발달/Noun 했고/Verb 확대/Noun 해/Verb 가고/Verb 있습니다/Adjective 
+기독교/Noun 에서/Josa 나온/Verb 건/Noun 맞습니다/Verb 하지만/Conjunction 그로/Noun 인한/Adjective 반작용/Noun 은/Josa 생각/Noun 하고/Josa 글/Noun 을/Josa 쓰지/Verb 않은/Verb 점/Noun 은/Josa 부끄럽습니다/Adjective ./Punctuation 여기/Noun 서/Josa 이런/Adjective 댓글/Noun 을/Josa 달기/Noun 보다/Josa 바이블/Noun 을/Josa 한/Verb 번/Noun 더/Noun 읽고/Verb 봉사/Noun 나/Josa 기부/Noun 를/Josa 하면서/Verb 배/Noun 푸는/Verb 삶/Noun 을/Josa 사시/Noun 는/Josa 게/Noun 신/Noun 을/Josa 위/Noun 한/Josa 더/Noun 좋은/Adjective 선교/Noun 이자/Noun 포교/Noun 일/Noun 것/Noun 입니다/Adjective 부디/Noun 회개/Noun 하시길/Verb 기/Modifier 도합/Modifier 니/Noun 다/Josa 
+부처님/Noun 의/Josa 자비/Noun 가/Josa 온/Modifier 세상/Noun 에/Josa ~~/Punctuation 코로나/Noun 종식/Noun 기원/Noun 합니다/Verb 
+코로나/Noun 의/Josa 교훈/Noun 이/Josa 모든/Noun 사람/Noun 이/Josa 동안거/Noun ,/Punctuation 하안거/Noun 하는/Verb 스님/Noun 처럼/Josa 독거/Noun 생활/Noun 하라/Noun 는/Josa 의미/Noun 인/Josa 듯/Noun ,,/Punctuation 나무/Noun 관세음보살/Noun ../Punctuation 천주교도/Noun 비슷한/Adjective 카르/Noun 투/Noun 지오/Noun 수도회/Noun 가/Josa 있습니다/Adjective ./Punctuation 같이/Adverb 밥/Noun 도/Josa 안/VerbPrefix 먹어/Verb ../Punctuation 
+BBS/Alpha 30/Number 주년/Noun 석가탄신일/Noun 황금/Noun 연휴/Noun 주간/Noun !!/Punctuation 하지만/Conjunction 코로나/Noun 19/Number 로/Noun 인해/Adjective 온라인/Noun 으로/Josa 진행/Noun 된/Verb 약식/Noun 기념/Noun 식/Suffix !!/Punctuation 매년/Noun 새로운/Adjective 10년/Number 의/Foreign 시작/Noun 만/Josa 되면/Verb 국가/Noun 적/Suffix 재난/Noun 재해/Noun 가/Josa 계속/Noun 일어나는/Verb 상황/Noun !!/Punctuation 
+너무/Adverb 대단하십니다/Adjective ./Punctuation 
