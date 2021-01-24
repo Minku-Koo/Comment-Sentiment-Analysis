@@ -73,14 +73,14 @@ save path : ./comment/after-okt-comment/
 
 ---------------------------------------------------
 
-## 6. Make Graph
+## 6. RESULT (Make Graph)
 
-1. Average, Dispersion, Standard Deviation / Religion
+1. Average, Standard Deviation / Religion
 ![표준편차및분산표](https://user-images.githubusercontent.com/25974226/105630857-b3cf3400-5e8e-11eb-9439-81028d316b63.JPG)
 
 1. Sentiment time flow graph  _(path : ./result-graph/emotion-flow/)_
-    - _Before COVID19 : color green_
-    - _After COVID19 : color red_<br>
+    - Before COVID19 : color green
+    - After COVID19 : color red <br><br>
     
 
    + __천주교__
