@@ -39,8 +39,8 @@
 
 ## 3. Use KoNLPy Okt
 
-> okt.pos(comment)
-> remove 'Josa', 'Punctuation', 'Number'
+> okt.pos(comment) <br>
+> remove 'Josa', 'Punctuation', 'Number'<br>
 > save path : ./comment/after-okt-comment/
 
 ---------------------------------------------------
