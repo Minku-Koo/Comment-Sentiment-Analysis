@@ -39,9 +39,11 @@
 
 ## 3. Use KoNLPy Okt
 
-> okt.pos(comment) <br>
-> remove 'Josa', 'Punctuation', 'Number'<br>
-> save path : ./comment/after-okt-comment/
+```
+okt.pos(comment)
+remove 'Josa', 'Punctuation', 'Number'
+save path : ./comment/after-okt-comment/
+```
 
 ---------------------------------------------------
 
@@ -72,5 +74,34 @@
 
 ## 6. Make Graph
 
-- 
+1. Average, Dispersion, Standard Deviation / Religion
+![표준편차및분산표](https://user-images.githubusercontent.com/25974226/105630857-b3cf3400-5e8e-11eb-9439-81028d316b63.JPG)
+
+1. Sentiment time flow graph
+   + 천주교
+   ![천주교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630885-e11be200-5e8e-11eb-8b03-94246ee73ca0.png)
+   + 종교
+   ![종교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630878-d82b1080-5e8e-11eb-8941-1b89254813a7.png)
+   
+1. All Comment Count per Month / Religion
+![graph-month-comment-count](https://user-images.githubusercontent.com/25974226/105630892-e8db8680-5e8e-11eb-95f6-d35c6ebe7128.png)
+
+1. Average Sentiment stick graph / Religion
+![종교별 평균 감성 지수-graph-avg-emotion](https://user-images.githubusercontent.com/25974226/105630900-f264ee80-5e8e-11eb-88d5-fab987e80766.png)
+
+1. WordCloud / Religion
+    + Before COVID19, 기독교
+    ![기독교 이전-wordcloud](https://user-images.githubusercontent.com/25974226/105630935-19232500-5e8f-11eb-8f73-45b7342d06b0.png)
+    + After COVID19, 기독교
+    ![기독교 이후-wordcloud](https://user-images.githubusercontent.com/25974226/105630939-1a545200-5e8f-11eb-82fa-c1d5dca13034.png)
+
+1. Top 20 Word / Religion
+   + Before COVID19, 신천지 
+    ![before1-graph](https://user-images.githubusercontent.com/25974226/105630930-1294ad80-5e8f-11eb-810f-24a8741f4513.png)
+    + After COVID19, 신천지
+    ![after1-graph](https://user-images.githubusercontent.com/25974226/105630911-fe50b080-5e8e-11eb-90bb-29e8fd9cfb16.png)
+    
+
+
+
 
