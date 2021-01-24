@@ -93,7 +93,7 @@ save path : ./comment/after-okt-comment/
 1. All Comment Count per Month / Religion  _(path : ./result-graph/comment-count/)_
 ![graph-month-comment-count](https://user-images.githubusercontent.com/25974226/105630892-e8db8680-5e8e-11eb-95f6-d35c6ebe7128.png)
 
-1. Sentiment Average stick graph / Religion  _(path : ./result-graph/stick/)_
+1. Sentiment Average stick graph / Religion  _(path : ./result-graph/emotion-average-stick/)_
 ![종교별 평균 감성 지수-graph-avg-emotion](https://user-images.githubusercontent.com/25974226/105630900-f264ee80-5e8e-11eb-88d5-fab987e80766.png)
 
 1. WordCloud / Religion  _(path : ./result-graph/word-cloud/)_
