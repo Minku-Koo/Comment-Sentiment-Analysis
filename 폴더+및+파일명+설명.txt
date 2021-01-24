@@ -16,3 +16,11 @@ dir [comment-emotion-result]
 > json, date-article-comment list
 > all-comment-predict-result.csv : 모든 댓글 다 합친 것
 
+dir [python-code]
+> 모든 파이썬 파일
+
+dir [train-data]
+> keras deep learning 학습에 필요한 csv 파일
+
+dir [result-graph]
+> 여러가지 결과 그래프
