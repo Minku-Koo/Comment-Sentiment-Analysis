@@ -10,7 +10,7 @@
 ---------------------------------------------------
 ---------------------------------------------------
 
-## 1. Comment Data Scrap
+## 1. Scrap Comment Data
 
 - Python File Name : ./python-code/comment_crawling.py
 - Target Place : Naver, Daum News Comment
@@ -27,7 +27,7 @@
 
 ---------------------------------------------------
 
-## 2. Comment Data Labeling
+## 2. Labeling Comment Data
 
 - path : ./train-data/
 - Comment Handwork : comment-labeling.csv
