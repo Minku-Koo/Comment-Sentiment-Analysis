@@ -2,10 +2,10 @@
 ### Comment Sentiment Analysis using Deep Learning
 ---------------------------------------------------
 
-- Author : Minku Koo
-- Project Period : Dec/2020 ~ 21/Jan/2021
-- E-Mail : corleone@kakao.com
-- Keyword : "sentiment-analysis", "korean", "deep learning", "KoNLPy", "keras", "tensorflow"
+* Author : Minku Koo
+* Project Period : Dec/2020 ~ 21/Jan/2021
+* E-Mail : corleone@kakao.com
+* Keyword : "sentiment-analysis", "korean", "deep learning", "KoNLPy", "keras", "tensorflow"
 
 ---------------------------------------------------
 ---------------------------------------------------
@@ -79,6 +79,10 @@ save path : ./comment/after-okt-comment/
 ![표준편차및분산표](https://user-images.githubusercontent.com/25974226/105630857-b3cf3400-5e8e-11eb-9439-81028d316b63.JPG)
 
 1. Sentiment time flow graph  _(path : ./result-graph/emotion-flow/)_
+    - _Before COVID19 : color green_
+    - _After COVID19 : color red_<br>
+    
+
    + __천주교__
    ![천주교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630885-e11be200-5e8e-11eb-8b03-94246ee73ca0.png)
    + __종교__
@@ -87,7 +91,7 @@ save path : ./comment/after-okt-comment/
 1. All Comment Count per Month / Religion  _(path : ./result-graph/comment-count/)_
 ![graph-month-comment-count](https://user-images.githubusercontent.com/25974226/105630892-e8db8680-5e8e-11eb-95f6-d35c6ebe7128.png)
 
-1. Average Sentiment stick graph / Religion  _(path : ./result-graph/stick/)_
+1. Sentiment Average stick graph / Religion  _(path : ./result-graph/stick/)_
 ![종교별 평균 감성 지수-graph-avg-emotion](https://user-images.githubusercontent.com/25974226/105630900-f264ee80-5e8e-11eb-88d5-fab987e80766.png)
 
 1. WordCloud / Religion  _(path : ./result-graph/word-cloud/)_
