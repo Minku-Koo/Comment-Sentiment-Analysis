@@ -66,8 +66,7 @@
 1. Calculate sentiment per date 
     + each Article sentiment : Weight Average _(article comment count / date comment count)_
     + each Date sentiment : using IMDb's rating system _(https://www.quora.com/How-does-IMDbs-rating-system-work)_
-    ![계산하기](https://user-images.githubusercontent.com/25974226/105630843-a31ebe00-5e8e-11eb-880c-dc426ceced4c.JPG)
-
+    ![계산하기2](https://user-images.githubusercontent.com/25974226/105633620-044d8e00-5e9d-11eb-92df-b4072a9d0ee2.JPG)
 
 ---------------------------------------------------
 
