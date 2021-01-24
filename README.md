@@ -102,7 +102,7 @@ save path : ./comment/after-okt-comment/
     + __After COVID19, 기독교__
     ![기독교 이후-wordcloud](https://user-images.githubusercontent.com/25974226/105630939-1a545200-5e8f-11eb-82fa-c1d5dca13034.png)
 
-1. Top 20 Word / Religion  _(path : ./result-graph/top-word/)_
+1. Top 30 Word / Religion  _(path : ./result-graph/top-word/)_
    + __Before COVID19, 신천지__
     ![before1-graph](https://user-images.githubusercontent.com/25974226/105630930-1294ad80-5e8f-11eb-810f-24a8741f4513.png)
     + __After COVID19, 신천지__
