@@ -82,8 +82,8 @@ save path : ./comment/after-okt-comment/
     - Before COVID19 : color green
     - After COVID19 : color red
     - y axis
-        + the more 1 : Positive
-        + the more 0 : Negative
+        + close to 1 : Positive
+        + close to 0 : Negative
     <br><br>
     + __천주교__
     ![천주교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630885-e11be200-5e8e-11eb-8b03-94246ee73ca0.png)
