@@ -1,9 +1,13 @@
+# 종교별로 댓글에 명사 빈도순 그래프
+# make graph that noun frequency in comment by religion
+
 import json
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from matplotlib import font_manager, rc
 import nltk
 
+# url : https://www.ranks.nl/stopwords/korean
 stopword = ['아','휴','아이구','아이쿠','아이고','어','나','우리','저희','따라','는','이','다','요',
 '의해','을','를','에','의','가','으로','로','에게','뿐이다','의거하여','근거하여','입각하여',
 '기준으로','예하면','예를 들면','예를 들자면','저','소인','소생','저희','지말고','하지마','하지마라',
@@ -50,8 +54,9 @@ stopword = ['아','휴','아이구','아이쿠','아이고','어','나','우리'
 ,'아이야','아니','와아','응','아이','참나','년','월','일','령','영','일','이','삼','사','오','육','륙','칠','팔','구',
 '이천육','이천칠','이천팔','이천구','하나','둘','셋','넷','다섯','여섯','일곱','여덟','아홉','령','영'
 '고','들','에','은','는','이','가','.',',','ㅋ','ㅎ','다','니','?','!','',' ','...',"님","입니다","..","고"
-,"이다","~","~",'!!','~~','!!!','??','때문','킄',"....","뭐","그냥","못","할"
+,"이다","~",'!!','~~','!!!','??','때문','킄',"....","뭐","그냥","못","할"
 ]
+
 dictName = {
         "1":"신천지",
         "2":"기독교",
@@ -60,27 +65,37 @@ dictName = {
         "5":"종교" }
 
 result_path = '../result-graph/top-word/'
-
-def make_top_file(list, tname):
+def make_top_file(list, tname): # make txt file 
     global dictName
     with open(result_path+dictName[tablename[-1]]+"-"+tname+'.txt', 'wt', encoding='utf-8') as f:
-        for l in list:
-            f.write(l[0]+"/" +str(l[1])+"\n")
-
-
-
-def make_token(tname, result, top, num ):
+        for l in list: f.write(l[0]+"/" +str(l[1])+"\n")
+    return 0
+    
+# make word cloud
+# 워드 클라우드 생성
+def make_wordcloud(text, title, num):
+    word_max = 100
+    wordcloud = WordCloud(font_path='./font/BMDOHYEON_ttf.ttf', background_color='white',\
+                    max_words=word_max, max_font_size=200, height=700, width=900).generate(text)
+    
+    plt.figure(num) #이미지 사이즈 지정
+    plt.imshow(wordcloud, interpolation='lanczos') #이미지의 부드럽기 정도
+    plt.axis('off') #x y 축 숫자 제거
+    plt.savefig('../result-graph/word-cloud/'+title+'-wordcloud.png', dpi=300)
+    
+# make noun frequency graph per religion
+def make_top_word_graph(tname, result, top, num ):
     global dictName
     if "after" in tname: period = " 이후"
     else: period = " 이전"
     
     tokens = result.split(" ")
     text = nltk.Text(tokens)
-    print("word token:",len(set(text.tokens)))
-    topWord = text.vocab().most_common(top) 
-    count = 30
+    topWord = text.vocab().most_common(top) # top n word 
+    count = 30 # top word on graph
     xlist = [a[0] for a in topWord[:count ]]
     ylist = [a[1] for a in topWord[:count ]]
+    category = dictName[tname[-1]]+period # religion + period(before or after)
     
     plt.figure(num-1)
     font_name = font_manager.FontProperties(fname='./font/KoPubDotumMedium.ttf', size=7).get_name()
@@ -89,48 +104,47 @@ def make_token(tname, result, top, num ):
     plt.xlabel('word')
     plt.xticks(rotation=70)
     plt.ylabel('count')
-    plt.title(dictName[tname[-1]]+period +' TOP '+str(count)+' WORD')
+    plt.title(category +' TOP '+str(count)+' WORD')
     plt.ylim([10, 33000]) 
     plt.plot(xlist,ylist)
     plt.savefig(result_path+tname+'-graph.png', dpi=400)
-    for i in topWord[:20]: print(i)
-    # make_top_file(topWord, tname)
+    
+    # make text file 
+    make_top_file(topWord, tname)
+    
+    # if you want to make wordcloud
+    make_wordcloud(result, category, num)   #   워드 클라우드 생성
 
 tlist = []
-for i in range(1,6):
+for i in range(1,6): # database table name list
     tlist.append( [ "after"+str(i), "before"+str(i) ]  )
-print(tlist)
 
 num =1
 for tableList in tlist:
     data = []
     for tablename in tableList:
         temp = ""
-        source_path ="../comment/after-okt-comment/"
+        source_path ="../comment/after-okt-comment/" # comment text file 
         with open(source_path+"daum"+tablename+'-comment+okt.txt', encoding="utf-8") as f:
             temp = f.read()
         with open(source_path+"naver"+tablename+'-comment+okt.txt', encoding="utf-8") as f:
             temp += f.read()
-        cList =[]
-        print("**"*10,":", tablename)
-        cList = temp.replace("\n"," ").split(" ")
+        print(tablename)
+        word_list =[]
+        word_list = temp.replace("\n"," ").split(" ") # split space to make word list
         result =""
         keyword = dictName[tablename[-1]]
-        for c in cList:
-            sp = c.split("/")
-            if len(sp[0]) ==1: continue
-            if c=="": continue
-            try:
-                word , non= sp[0], sp[1]
-            except: 
-                print("c:",c)
-                continue
+        for word in word_list:
+            word_ = word.split("/")
+            try: word , morpheme = word_[0], word_[1] # word and morpheme
+            except: continue
             
-            if non != 'Noun': continue
-            if word == keyword : continue
+            if len(word) <=1: continue # 1글자 이하면 패스
+            if morpheme != 'Noun': continue # only noun
+            if word == keyword : continue # if word is keyword > pass
             if word not in stopword: result += (word+" ")
             
         num+=3
-        make_token(tablename,result,  100, num )
+        make_top_word_graph(tablename, result,  100, num )
         
         
