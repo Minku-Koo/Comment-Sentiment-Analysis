@@ -80,13 +80,15 @@ save path : ./comment/after-okt-comment/
 
 1. Sentiment time flow graph  _(path : ./result-graph/emotion-flow/)_
     - Before COVID19 : color green
-    - After COVID19 : color red <br><br>
-    
-
-   + __천주교__
-   ![천주교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630885-e11be200-5e8e-11eb-8b03-94246ee73ca0.png)
-   + __종교__
-   ![종교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630878-d82b1080-5e8e-11eb-8941-1b89254813a7.png)
+    - After COVID19 : color red
+    - y axis
+        + the more 1 : Positive
+        + the more 0 : Negative
+    <br><br>
+    + __천주교__
+    ![천주교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630885-e11be200-5e8e-11eb-8b03-94246ee73ca0.png)
+    + __종교__
+    ![종교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630878-d82b1080-5e8e-11eb-8941-1b89254813a7.png)
    
 1. All Comment Count per Month / Religion  _(path : ./result-graph/comment-count/)_
 ![graph-month-comment-count](https://user-images.githubusercontent.com/25974226/105630892-e8db8680-5e8e-11eb-95f6-d35c6ebe7128.png)
@@ -101,7 +103,7 @@ save path : ./comment/after-okt-comment/
     ![기독교 이후-wordcloud](https://user-images.githubusercontent.com/25974226/105630939-1a545200-5e8f-11eb-82fa-c1d5dca13034.png)
 
 1. Top 20 Word / Religion  _(path : ./result-graph/top-word/)_
-   + __Before COVID19, 신천지 __
+   + __Before COVID19, 신천지__
     ![before1-graph](https://user-images.githubusercontent.com/25974226/105630930-1294ad80-5e8f-11eb-810f-24a8741f4513.png)
     + __After COVID19, 신천지__
     ![after1-graph](https://user-images.githubusercontent.com/25974226/105630911-fe50b080-5e8e-11eb-90bb-29e8fd9cfb16.png)
