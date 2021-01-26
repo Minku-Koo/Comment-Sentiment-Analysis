@@ -7,8 +7,7 @@ import json
 import math
 
 tlist = [] # database table name
-for i in range(1,6):
-    tlist.append(["before"+str(i),"after"+str(i)])
+for i in range(1,6): tlist.append(["before"+str(i),"after"+str(i)])
 
 dictName = { # table index and name
         "1":"신천지",

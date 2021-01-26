@@ -8,8 +8,7 @@ import math
 
 
 tlist = []
-for i in range(1,6):
-    tlist.append(["before"+str(i),"after"+str(i)])
+for i in range(1,6): tlist.append(["before"+str(i),"after"+str(i)])
 
 dictName = { # index and religion name
         "1":"신천지",
