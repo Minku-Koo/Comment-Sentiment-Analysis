@@ -129,7 +129,7 @@ for tableList in tlist:
             temp = f.read()
         with open(source_path+"naver"+tablename+'-comment+okt.txt', encoding="utf-8") as f:
             temp += f.read()
-        print(tablename)
+        
         word_list =[]
         word_list = temp.replace("\n"," ").split(" ") # split space to make word list
         result =""
