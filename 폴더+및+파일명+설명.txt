@@ -1,8 +1,8 @@
 dir [comment]
 > comment raw data 댓글 원본 데이터
-> daum or naver
-> before : 코로나 이전
-> after : 코로나 이후
+> Scrap Target : daum or naver
+> before : 코로나19 이전
+> after : 코로나19 이후
 
 [숫자:키워드]
 1: 신천지
@@ -11,9 +11,9 @@ dir [comment]
 4: 불교
 5: 종교
 
-dir [comment-emotion-result]
-> 딥러닝 예측 결과
-> json, date-article-comment list
+dir [comment-emotion-predict]
+> 딥러닝 예측 결과 파일 .json
+> json, dictionary[date][article] = [[comment],[sentiment]]
 > all-comment-predict-result.csv : 모든 댓글 다 합친 것
 
 dir [python-code]
