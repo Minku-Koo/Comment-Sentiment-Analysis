@@ -44,8 +44,7 @@ def calc_comment_count(dict ):
         else:  data[date] = [comment_count, article_count, d_y, d_m]
         
     result =[]
-    for d in data.keys():
-        result.append([d, data[d]])
+    for d in data.keys(): result.append([d, data[d]])
     # list sort order by date
     result = sorted(result, key = lambda x: (int(x[1][2]), int(x[1][3])))
     

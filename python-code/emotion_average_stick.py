@@ -21,8 +21,7 @@ dictName = { # index and religion name
 def append_dict(d1, d2): #딕셔너리 합치기
     for d in d1.keys():
         if d in d2.keys(): 
-            for i in d1[d]:
-                d2[d][i] = d1[d][i]
+            for i in d1[d]: d2[d][i] = d1[d][i]
         else: d2[d] = d1[d]
     return d2
 
