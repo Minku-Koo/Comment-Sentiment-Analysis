@@ -54,7 +54,7 @@ stopword = ['아','휴','아이구','아이쿠','아이고','어','나','우리'
 ,'아이야','아니','와아','응','아이','참나','년','월','일','령','영','일','이','삼','사','오','육','륙','칠','팔','구',
 '이천육','이천칠','이천팔','이천구','하나','둘','셋','넷','다섯','여섯','일곱','여덟','아홉','령','영'
 '고','들','에','은','는','이','가','.',',','ㅋ','ㅎ','다','니','?','!','',' ','...',"님","입니다","..","고"
-,"이다","~",'!!','~~','!!!','??','때문','킄',"....","뭐","그냥","못","할"
+,"이다","~",'!!','~~','!!!','??','때문',"뭐","그냥","못","할"
 ]
 
 dictName = {
@@ -101,9 +101,9 @@ def make_top_word_graph(tname, result, top, num ):
     font_name = font_manager.FontProperties(fname='./font/KoPubDotumMedium.ttf', size=7).get_name()
     rc('font', family=font_name)
 
-    plt.xlabel('word')
+    plt.xlabel('Word')
     plt.xticks(rotation=70)
-    plt.ylabel('count')
+    plt.ylabel('Count')
     plt.title(category +' TOP '+str(count)+' WORD')
     plt.ylim([10, 33000]) 
     plt.plot(xlist,ylist)
