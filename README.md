@@ -2,13 +2,13 @@
 ### Comment Sentiment Analysis using Deep Learning
 
 
-✔ Author : Minku Koo
+📌 Author : Minku Koo
 
-✔ Project Period : Dec/2020 ~ 21/Jan/2021
+📌 Project Period : Dec/2020 ~ 21/Jan/2021
 
-✔ E-Mail : corleone@kakao.com
+📌 E-Mail : corleone@kakao.com
 
-✔ Keyword : "sentiment-analysis", "korean", "deep learning", "KoNLPy", "keras", "tensorflow"
+📌 Keyword : "sentiment-analysis", "korean", "deep learning", "KoNLPy", "keras", "tensorflow"
 
 
 ---------------------------------------------------
