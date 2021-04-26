@@ -59,10 +59,10 @@ save path : ./comment/after-okt-comment/
 
 ## 5. After build RNN Model
 
-1. make json file / dict[date][article] = [[comment list],[]]
-1. Every Comment Labeling using RNN Model
-1. update json file / dict[date][article] = [[comment list],[sentiment value list]] (path: ./comment/json-okt-comment)
-1. Calculate sentiment per date 
+1) make json file / dict[date][article] = [[comment list],[]]
+1) Every Comment Labeling using RNN Model
+1) update json file / dict[date][article] = [[comment list],[sentiment value list]] (path: ./comment/json-okt-comment)
+1) Calculate sentiment per date 
     + each Article sentiment : Weight Average _(article comment count / date comment count)_
     + each Date sentiment : using IMDb's rating system _(https://www.quora.com/How-does-IMDbs-rating-system-work)_
     ![계산하기2](https://user-images.githubusercontent.com/25974226/105633620-044d8e00-5e9d-11eb-92df-b4072a9d0ee2.JPG)
@@ -70,38 +70,50 @@ save path : ./comment/after-okt-comment/
 
 ## 6. RESULT (Make Graph)
 
-### 1. Average, Standard Deviation / Religion ###
+### 📍 Average, Standard Deviation / Religion ###
 ![표준편차및분산표](https://user-images.githubusercontent.com/25974226/105630857-b3cf3400-5e8e-11eb-9439-81028d316b63.JPG)
 
-### 2. Sentiment time flow graph  _(path : ./result-graph/emotion-flow/)_ ###
-    - Before COVID19 : color green
-    - After COVID19 : color red
-    - y axis
-        + close to 1 : Positive
-        + close to 0 : Negative
+### 📍 Sentiment time flow graph  ###
+*(path : ./result-graph/emotion-flow/)*
+
+
+   - Before COVID19 : color green
+   - After COVID19 : color red
+   - y axis
+       + close to 1 : Positive
+       + close to 0 : Negative
     <br><br>
-    + __천주교__
-    ![천주교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630885-e11be200-5e8e-11eb-8b03-94246ee73ca0.png)
-    + __종교__
-    ![종교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630878-d82b1080-5e8e-11eb-8941-1b89254813a7.png)
+   ✔ **천주교**
+     ![천주교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630885-e11be200-5e8e-11eb-8b03-94246ee73ca0.png)
+   ✔ **종교**
+     ![종교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630878-d82b1080-5e8e-11eb-8941-1b89254813a7.png)
    
-### 3. All Comment Count per Month / Religion  *(path : ./result-graph/comment-count/)* ###
+### 📍 All Comment Count per Month / Religion   ###
+*(path : ./result-graph/comment-count/)*
 ![graph-month-comment-count](https://user-images.githubusercontent.com/25974226/105630892-e8db8680-5e8e-11eb-95f6-d35c6ebe7128.png)
 
-### 4. Sentiment Average stick graph / Religion  *(path : ./result-graph/emotion-average-stick/)* ###
+### 📍 Sentiment Average stick graph / Religion   ###
+*(path : ./result-graph/emotion-average-stick/)*
 ![종교별 평균 감성 지수-graph-avg-emotion](https://user-images.githubusercontent.com/25974226/105630900-f264ee80-5e8e-11eb-88d5-fab987e80766.png)
 
-### 5. WordCloud / Religion  *(path : ./result-graph/word-cloud/)* ###
-    + __Before COVID19, 기독교__
-    ![기독교 이전-wordcloud](https://user-images.githubusercontent.com/25974226/105630935-19232500-5e8f-11eb-8f73-45b7342d06b0.png)
-    + __After COVID19, 기독교__
-    ![기독교 이후-wordcloud](https://user-images.githubusercontent.com/25974226/105630939-1a545200-5e8f-11eb-82fa-c1d5dca13034.png)
 
-### 6. Top 30 Word / Religion  *(path : ./result-graph/top-word/)* ###
-   + __Before COVID19, 신천지__
-    ![before1-graph](https://user-images.githubusercontent.com/25974226/105630930-1294ad80-5e8f-11eb-810f-24a8741f4513.png)
-   + __After COVID19, 신천지__
-    ![after1-graph](https://user-images.githubusercontent.com/25974226/105630911-fe50b080-5e8e-11eb-90bb-29e8fd9cfb16.png)
+### 📍 WordCloud / Religion  ###
+*(path : ./result-graph/word-cloud/)*
+
+
+   ✔ Before COVID19, 기독교
+     ![기독교 이전-wordcloud](https://user-images.githubusercontent.com/25974226/105630935-19232500-5e8f-11eb-8f73-45b7342d06b0.png)
+   ✔ After COVID19, 기독교
+     ![기독교 이후-wordcloud](https://user-images.githubusercontent.com/25974226/105630939-1a545200-5e8f-11eb-82fa-c1d5dca13034.png)
+
+### 📍 Top 30 Word / Religion  ###
+*(path : ./result-graph/word-cloud/)*
+
+
+   ✔ __Before COVID19, 신천지__
+     ![before1-graph](https://user-images.githubusercontent.com/25974226/105630930-1294ad80-5e8f-11eb-810f-24a8741f4513.png)
+   ✔ __After COVID19, 신천지__
+     ![after1-graph](https://user-images.githubusercontent.com/25974226/105630911-fe50b080-5e8e-11eb-90bb-29e8fd9cfb16.png)
     
 
 
