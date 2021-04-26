@@ -11,8 +11,6 @@
 📌 Keyword : "sentiment-analysis", "korean", "deep learning", "KoNLPy", "keras", "tensorflow"
 
 
----------------------------------------------------
-
 ## 1. Scrapping Comment Data
 
 - Python File Name : ./python-code/comment_crawling.py
