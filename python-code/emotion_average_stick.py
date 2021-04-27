@@ -20,7 +20,7 @@ dictName = { # index and religion name
 # dictionary + dictionary
 def append_dict(d1, d2): #딕셔너리 합치기
     for d in d1.keys():
-        if d in d2.keys(): 
+        if d in d2.keys():
             for i in d1[d]: d2[d][i] = d1[d][i]
         else: d2[d] = d1[d]
     return d2
@@ -69,6 +69,7 @@ def make_graph(tablename, x, y):
              color='black',
              horizontalalignment='center', 
              verticalalignment='bottom')
+             
     for i, v in enumerate([r for r in range(5)] ): #after value
         plt.text(v-0.3, x[i], x[i],  
              fontsize = 11, 
@@ -86,7 +87,7 @@ def make_graph(tablename, x, y):
     plt.yticks(fontsize=16)
     plt.legend()
     plt.savefig(filepath +"/emotion-average-stick/"+tablename+'-graph-avg-emotion.png', dpi=400) 
-    return 0
+    return 
 
 x,y = [],[]
 for tableList in tlist:
@@ -96,8 +97,10 @@ for tableList in tlist:
         path = "../comment-emotion-predict/"
         with open(path+"finish-daum"+tablename+'-dict.json', encoding="utf-8") as json_file:
             data1 = json.load(json_file)
+            
         with open(path+"finish-naver"+tablename+'-dict.json', encoding="utf-8") as json_file:
             data2 = json.load(json_file)
+            
         print(tablename)
         temp = append_dict(data1, data2)
         data.append(calc_comment_avg(temp, tablename))

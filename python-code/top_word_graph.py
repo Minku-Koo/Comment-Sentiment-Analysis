@@ -82,10 +82,12 @@ def make_wordcloud(text, title, num):
     plt.imshow(wordcloud, interpolation='lanczos') #이미지의 부드럽기 정도
     plt.axis('off') #x y 축 숫자 제거
     plt.savefig('../result-graph/word-cloud/'+title+'-wordcloud.png', dpi=300)
+    return
     
 # make noun frequency graph per religion
 def make_top_word_graph(tname, result, top, num ):
     global dictName
+    
     if "after" in tname: period = " 이후"
     else: period = " 이전"
     
@@ -114,6 +116,8 @@ def make_top_word_graph(tname, result, top, num ):
     
     # if you want to make wordcloud
     make_wordcloud(result, category, num)   #   워드 클라우드 생성
+    
+    return
 
 tlist = []
 for i in range(1,6): # database table name list

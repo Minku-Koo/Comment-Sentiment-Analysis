@@ -61,6 +61,7 @@ def make_graph_flow(tablename, x, y, x2, y2, fig):
                 month_list[-1] = year+"/"+ month_list[-1]
                 year_temp = year
         else: month_list.append("")
+        
     for month in x2:
         month, year = month.split("/")[1],  month.split("/")[0][2:]
         if temp != month : 
@@ -69,6 +70,7 @@ def make_graph_flow(tablename, x, y, x2, y2, fig):
             if  year_temp != year: 
                 month_list[-1] = year+"/"+ month_list[-1]
                 year_temp = year
+                
         else: month_list.append("")
 
     plt.ylim([0.0, 1.02]) 
@@ -90,7 +92,8 @@ def makeValue(data):
             table_emo_count += len(data[date][art][1])
     
     for data_date in data.keys():
-        table_emo_avg += sum([ (sum(data[data_date][art][1])/(len(data[data_date][art][1])+1))*(len(data[data_date][art][1])/ table_emo_count) \
+        table_emo_avg += sum([ (sum(data[data_date][art][1])/(len(data[data_date][art][1])+1))\
+                                *(len(data[data_date][art][1])/ table_emo_count) \
                                 for art in data[data_date].keys() ]) #날짜당 감성 평균, 가중 평균
     
     for date in data.keys(): #모든 날짜
@@ -116,6 +119,7 @@ def makeValue(data):
         d_y, d_m, d_d = int(date.split("/")[0]), int(date.split("/")[1]), int(date.split("/")[2])
         
         if isInput: result.append([date, round(emotion_, 6), d_y, d_m, d_d ])
+        
     result_sort_day = sorted(result, key = lambda x: (x[2], x[3], x[-1])) # 정렬 : 1순위 년도, 2순위 월, 3순위 일
     
     x,y = [],[]

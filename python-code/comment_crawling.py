@@ -121,7 +121,7 @@ class newsCrawler:
         for link in linkSet: #모든 링크 데이터 수집
             self.driver.get(link) # selenium으로 기사 url 접속
             self.driver.implicitly_wait(3)
-            time.sleep(0.1)
+            time.sleep(0.01)
             count+=1 #진행 상황 알기 위한 변수
             
             try:
@@ -174,8 +174,7 @@ class newsCrawler:
             sql += "'%s',%d,%d,%d,'%s','%s')" %( content, year, month, day ,link, commentSet)
             #디비에 입력
             self.cursor.execute(sql)
-            print("SQL input Success")
-            print(self.keyword,">>",count,"/",link_count)
+            
             
         print("Data finished")
         return 0
@@ -213,7 +212,6 @@ class newsCrawler:
                 nextBtn.click() #클릭
             else: break #반복 종료
         
-        print("link count:",len(self.linkSet))
         self.cursor = self.db.cursor()  # DB 연결
         self.daumArticle(self.linkSet) #기사별 데이터 수집
         self.db.commit() #디비 저장
@@ -306,10 +304,8 @@ class newsCrawler:
             sql += "'%s',%d,%d,%d,'%s','%s')" %( content, year, month, day ,link, commentSet)
             #디비에 입력
             self.cursor.execute(sql)
-            print("SQL input Success")
             print(self.keyword,">>",count,"/",link_count)
             
-        print("Data finished")
         return 0
 
 if __name__ == "__main__":
