@@ -4,7 +4,6 @@
 from matplotlib import font_manager, rc
 import matplotlib.pyplot as plt
 import json
-import math
 
 tlist = [] # database table name
 for i in range(1,6): tlist.append(["before"+str(i),"after"+str(i)])
@@ -15,7 +14,6 @@ dictName = { # table index and name
         "3":"천주교",
         "4":"불교",
         "5":"종교" }
-
 
 def append_dict(d1, d2): #딕셔너리 합치기 dictionary + dictionary
     for d in d1.keys():
@@ -162,10 +160,9 @@ for tableList in tlist:
     x2, y2 = data[1][0], data[1][1]
     if fig==0:
         plt = make_graph(tablename, x, y, x2, y2,fig)
-        fig+=1
     else: 
         plt = sum_graph(tablename, x, y, x2, y2, plt, colorlist[fig-1])
-        fig+=1
+    fig+=1
         
         
 plt.savefig("../result-graph/comment-count/graph-month-comment-count.png", dpi=400) 
