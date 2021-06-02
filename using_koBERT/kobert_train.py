@@ -52,9 +52,18 @@ sequence_output, pooled_output = model(input_ids, input_mask, token_type_ids)
 
 # bertmodel, vocab = get_pytorch_kobert_model()
 
+unseen_test = pd.DataFrame([['음식, 발열, 구토, 복통, 설사', 7]], columns = [['질문 내용', '질병명']]) 
 
+unseen_values = ["그러니까 제발 그러지마 ㅠㅜ완전 싫다고","맞아맞아 나는 그게 제일 좋아!! 사랑해"]
+test_set = BERTDataset(unseen_values, 0, 1, tok, max_len, True, False) 
+test_input = torch.utils.data.DataLoader(test_set, batch_size=batch_size, num_workers=5) 
 
-
+for batch_id, (token_ids, valid_length, segment_ids, label) in enumerate(tqdm_notebook(test_input)): 
+    token_ids = token_ids.long().to(device) 
+    segment_ids = segment_ids.long().to(device) 
+    valid_length= valid_length 
+    out = model(token_ids, valid_length, segment_ids) 
+    print(out)
 
 
 
