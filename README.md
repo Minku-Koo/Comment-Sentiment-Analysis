@@ -2,42 +2,100 @@
 ### Comment Sentiment Analysis using Deep Learning
 
 
-📌 Author : Minku Koo
+📌 Author : [Minku Koo](https://github.com/Minku-Koo)    
 
-📌 Project Period : Dec/2020 ~ 21/Jan/2021
+📌 Project Period : Dec/2020 ~ Jan/2021    
 
-📌 E-Mail : corleone@kakao.com
+📌 Contact : corleone@kakao.com    
 
-📌 Keyword : "sentiment-analysis", "korean", "deep learning", "KoNLPy", "keras", "tensorflow"
+📌 Main Library : tensorflow, keras, KoNLPy
+
+📌 Keyword : "Sentiment Analysis", "Machine Learning", "Korean", "Deep Learning"    
 
 
 ## 1. Scrapping Comment Data
 
-- Python File Name : ./python-code/comment_crawling.py
+- Python Crawler : ./python-code/comment_crawling.py
 - Target Place : Naver, Daum News Comment
 - Scrapped Data : Comment, Replay, Article Date (+ Title, Content)
 - News Searching Keyword : "기독교", "불교", "천주교", "신천지", "종교"
-- Data Saved Place : Database (mysql or MariaDB)
+- Data Saved Place : Database (MariaDB)
 - Database Data to Text file - path : ./comment/raw-comment/
 
-### 🔍 Scrap Period per Religion ###
-![수집기간](https://user-images.githubusercontent.com/25974226/105630853-add95300-5e8e-11eb-9e23-37addf3c6904.JPG)
+### 🔍 Scrapping Period per Religion 
+|검색 키워드|수집 시작 기간|기준 날짜|수집 종료 기간|
+|:--------:|:-----------:|:------:|:-----------:|
+| 신천지 | 19.09.17 | 20.02.17 | 20.07.18 |
+| 기독교 |19.08.20| 20.01.20 | 20.10.20 |
+| 천주교 | 19.08.20 | 20.01.20 | 20.08.20 |
+| 불교 | 19.08.20 | 20.01.20 | 20.08.20 |
+| 종교 | 19.08.20 | 20.01.20 | 20.10.10 |
 
-### 🔍 Scrap Data Result ###
-![수집결과](https://user-images.githubusercontent.com/25974226/105630851-aa45cc00-5e8e-11eb-9890-0e4e165ab8f5.JPG)
+### 🔍 Scrapped Data Result
 
+<table>
+    <thead>
+        <tr>
+        <th rowspan="2">검색 키워드</th>
+        <th colspan="2">이전 기간</th>
+        <th colspan="2">이후 기간</th>
+        </tr>
+        <tr>
+        <th>Article</th>
+        <th>Comment</th>
+        <th>Article</th>
+        <th>Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>신천지</td>
+            <td>211</td>
+            <td>22,658</td>
+            <td>2,974</td>
+            <td>262,840</td>
+        </tr>
+        <tr>
+            <td>기독교</td>
+            <td>1,771</td>
+            <td>94,405</td>
+            <td>1,186</td>
+            <td>85,443</td>
+        </tr>
+        <tr>
+            <td>천주교</td>
+            <td>1,899</td>
+            <td>37,010</td>
+            <td>1,685</td>
+            <td>56,881</td>
+        </tr>
+        <tr>
+            <td>불교</td>
+            <td>833</td>
+            <td>6,465</td>
+            <td>420</td>
+            <td>7,585</td>
+        </tr>
+        <tr>
+            <td>종교</td>
+            <td>1,939</td>
+            <td>52,527</td>
+            <td>2,373</td>
+            <td>122,206</td>
+        </tr>
+    </tbody>
+</table>
 
 ## 2. Labeling Comment Data
 
 - path : ./train-data/
-- Comment Human Inspection : comment-labeling.csv
-- Naver Movie Review : naver-ratings.csv
-- _( Data from https://github.com/e9t/nsmc )_
-- 네이버 및 다음 뉴스 댓글 수작업 레이블링 데이터 :  ./train-data/comment-labeling.csv
+- Comment Human Inspection : ./train-data/comment-labeling.csv
+- Naver Movie Review Data : naver-ratings.csv
+- _( Data from [Here](https://github.com/e9t/nsmc) )_
 
+## 3. Using KoNLPy Okt
 
-## 3. Use KoNLPy Okt
-
+#### Text Data Preprocessing
 ```
 okt.pos(comment)
 remove 'Josa', 'Punctuation', 'Number'
@@ -45,11 +103,11 @@ save path : ./comment/after-okt-comment/
 ```
 
 
-## 4. Build RNN Model with Keras
+## 4. Build Deep Learning Network using Keras
 
 - Python File Name : ./python-code/make_rnn_model.py
 - Train Data path : ./train-data/
-- Comment + Naver Movie Reivew => Transfer Learning_
+- Crawled Comment + Naver Movie Reivew => Transfer Learning
 - Comment text data convert to Vector (using TextVectorization)
 - Accuracy : 0.95
 - Val Accuracy : 0.83
