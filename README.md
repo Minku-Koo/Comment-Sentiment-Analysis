@@ -112,66 +112,116 @@ save path : ./comment/after-okt-comment/
 - Accuracy : 0.95
 - Val Accuracy : 0.83
 
-![model-making](https://user-images.githubusercontent.com/25974226/105630839-9d28dd00-5e8e-11eb-8067-4e23fca24768.JPG)
+<img src="./images/deeplearningmodel.jfif" width="70%" >
 
+## 5. Predict Sentiments Value
 
-## 5. After build RNN Model
-
-1) make json file / dict[date][article] = [[comment list],[]]
-1) Every Comment Labeling using RNN Model
-1) update json file / dict[date][article] = [[comment list],[sentiment value list]] (path: ./comment/json-okt-comment)
-1) Calculate sentiment per date 
+1) Make json file -> dict[date][article] = [[comment list],[]]
+1) Every Comment Labeling using Deep Learning Model
+1) Update json file / dict[date][article] = [[comment list],[sentiment value list]] (path: ./comment/json-okt-comment)
+1) Calculate sentiment value per date 
     + each Article sentiment : Weight Average _(article comment count / date comment count)_
-    + each Date sentiment : using IMDb's rating system _(https://www.quora.com/How-does-IMDbs-rating-system-work)_
-    ![계산하기2](https://user-images.githubusercontent.com/25974226/105633620-044d8e00-5e9d-11eb-92df-b4072a9d0ee2.JPG)
-
+    + each Date sentiment : using [IMDb's rating system](https://www.quora.com/How-does-IMDbs-rating-system-work)
+    <img src="./images/calc_sentiment.jfif" width="80%" >
 
 ## 6. RESULT (Make Graph)
 
 ### 📍 Average, Standard Deviation / Religion ###
-![표준편차및분산표](https://user-images.githubusercontent.com/25974226/105630857-b3cf3400-5e8e-11eb-9439-81028d316b63.JPG)
+<table>
+    <thead>
+        <tr>
+        <th rowspan="2">검색 키워드</th>
+        <th colspan="2">이전 기간</th>
+        <th colspan="2">이후 기간</th>
+        </tr>
+        <tr>
+        <th>평균</th>
+        <th>표준 편차</th>
+        <th>평균</th>
+        <th>표준 편차</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>신천지</td>
+            <td>0.381</td>
+            <td>0.412</td>
+            <td>0.313</td>
+            <td>0.388</td>
+        </tr>
+        <tr>
+            <td>기독교</td>
+            <td>0.310</td>
+            <td>0.372</td>
+            <td>0.276</td>
+            <td>0.371</td>
+        </tr>
+        <tr>
+            <td>천주교</td>
+            <td>0.375</td>
+            <td>0.405</td>
+            <td>0.284</td>
+            <td>0.377</td>
+        </tr>
+        <tr>
+            <td>불교</td>
+            <td>0.356</td>
+            <td>0.392</td>
+            <td>0.272</td>
+            <td>0.369</td>
+        </tr>
+        <tr>
+            <td>종교</td>
+            <td>0.313</td>
+            <td>0.376</td>
+            <td>0.271</td>
+            <td>0.367</td>
+        </tr>
+    </tbody>
+</table>
+
+
+### 📍 Sentiment Average stick graph / Religion   ###
+*(path : ./result-graph/emotion-average-stick/)*
+<img src="./images/sentiment-average.png" width="80%" >
 
 ### 📍 Sentiment time flow graph  ###
 *(path : ./result-graph/emotion-flow/)*
 
 
-   - Before COVID19 : color green
-   - After COVID19 : color red
+   - Before COVID19 : green
+   - After COVID19 : red
    - y axis
        + close to 1 : Positive
        + close to 0 : Negative
     <br><br>
-   ✔ **천주교**
-     ![천주교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630885-e11be200-5e8e-11eb-8b03-94246ee73ca0.png)
-   ✔ **종교**
-     ![종교-graph-emotion-flow](https://user-images.githubusercontent.com/25974226/105630878-d82b1080-5e8e-11eb-8941-1b89254813a7.png)
+   ✔ **천주교**    
+     <img src="./images/천주교그래프.png" width="80%" >    
+   ✔ **종교**    
+     <img src="./images/종교그래프.png" width="80%" >    
    
 ### 📍 All Comment Count per Month / Religion   ###
 *(path : ./result-graph/comment-count/)*
-![graph-month-comment-count](https://user-images.githubusercontent.com/25974226/105630892-e8db8680-5e8e-11eb-95f6-d35c6ebe7128.png)
-
-### 📍 Sentiment Average stick graph / Religion   ###
-*(path : ./result-graph/emotion-average-stick/)*
-![종교별 평균 감성 지수-graph-avg-emotion](https://user-images.githubusercontent.com/25974226/105630900-f264ee80-5e8e-11eb-88d5-fab987e80766.png)
+<img src="./images/numberofcomment.png" width="80%" >
 
 
 ### 📍 WordCloud / Religion  ###
 *(path : ./result-graph/word-cloud/)*
 
 
-   ✔ Before COVID19, 기독교
-     ![기독교 이전-wordcloud](https://user-images.githubusercontent.com/25974226/105630935-19232500-5e8f-11eb-8f73-45b7342d06b0.png)
-   ✔ After COVID19, 기독교
-     ![기독교 이후-wordcloud](https://user-images.githubusercontent.com/25974226/105630939-1a545200-5e8f-11eb-82fa-c1d5dca13034.png)
+   ✔ Before COVID19, 기독교      
+     <img src="./images/기독교-before-wordcloud.png" width="80%" >      
+   ✔ After COVID19, 기독교     
+     <img src="./images/기독교-after-wordcloud.png" width="80%" >     
 
 ### 📍 Top 30 Word / Religion  ###
 *(path : ./result-graph/word-cloud/)*
 
 
-   ✔ __Before COVID19, 신천지__
-     ![before1-graph](https://user-images.githubusercontent.com/25974226/105630930-1294ad80-5e8f-11eb-810f-24a8741f4513.png)
-   ✔ __After COVID19, 신천지__
-     ![after1-graph](https://user-images.githubusercontent.com/25974226/105630911-fe50b080-5e8e-11eb-90bb-29e8fd9cfb16.png)
+   ✔ Before COVID19, 신천지    
+     <img src="./images/신천지-before-count.png" width="80%" >    
+   ✔ After COVID19, 신천지    
+     <img src="./images/신천지-after-count.png" width="80%" >    
     
 
 
