@@ -210,18 +210,18 @@ save path : ./comment/after-okt-comment/
 
 
    ✔ Before COVID19, 기독교      
-     <img src="./images/기독교-before-wordcloud.png" width="80%" >      
+     <img src="./images/기독교-before-wordcloud.png" width="60%" >      
    ✔ After COVID19, 기독교     
-     <img src="./images/기독교-after-wordcloud.png" width="80%" >     
+     <img src="./images/기독교-after-wordcloud.png" width="60%" >     
 
 ### 📍 Top 30 Word / Religion  ###
 *(path : ./result-graph/word-cloud/)*
 
 
    ✔ Before COVID19, 신천지    
-     <img src="./images/신천지-before-count.png" width="80%" >    
+     <img src="./images/신천지-before-count.png" width="70%" >    
    ✔ After COVID19, 신천지    
-     <img src="./images/신천지-after-count.png" width="80%" >    
+     <img src="./images/신천지-after-count.png" width="70%" >    
     
 
 
