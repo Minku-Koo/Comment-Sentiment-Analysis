@@ -12,6 +12,15 @@
 
 📌 Keyword : "Sentiment Analysis", "Machine Learning", "Korean", "Deep Learning"    
 
+## 📃 Table of Contents
+- [Introduction](#comment-sentiment-analysis-using-deep-learning)
+- [Data Scrapping](#1-scrapping-comment-data)
+- [Data Labeling](#2-labeling-comment-data)
+- [Data Preprocessing](#3-using-konlpy-okt)
+- [Build Deep Learning Network](#4-build-deep-learning-network-using-keras)
+- [Predict Data Sentiments](#5-predict-sentiments-value)
+- [Result](#6-result-make-graph)
+
 
 ## 1. Scrapping Comment Data
 
