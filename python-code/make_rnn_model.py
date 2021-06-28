@@ -7,11 +7,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] ='2'
 
 import numpy as np
-from tensorflow.keras import models
-from tensorflow.keras import layers
-from tensorflow.keras import optimizers
-from tensorflow.keras import losses
-from tensorflow.keras import metrics
+from tensorflow.keras import models, layers, optimizers, losses, metrics
 import tensorflow as tf
 from keras.preprocessing.sequence import pad_sequences
 import csv
@@ -91,7 +87,7 @@ rnn_model.compile( # rnn model compile
     )
 
 # model training
-history = rnn_model.fit(x_train,y_train,
+history = rnn_model.fit(x_train, y_train,
                    epochs = 5,  batch_size = 128  , validation_data = (x_test, y_test) )
 rnn_model.summary()
 
